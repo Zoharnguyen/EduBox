@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	
+<!-- Mirrored from coffeecreamthemes.com/themes/jobseek/site/jobs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jul 2015 04:55:17 GMT -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="EduBox - Kết nối gia sư và học sinh">
+		<meta name="author" content="zohardata@gmail.com">
+		<title>EduBox - Kết nối gia sư và học sinh</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+
+		<!-- Main Stylesheet -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+		<!-- ============ PAGE LOADER START ============ -->
+
+		<div id="loader">
+			<i class="fa fa-cog fa-4x fa-spin"></i>
+		</div>
+
+		<!-- ============ PAGE LOADER END ============ -->
+
+		<!-- ============ NAVBAR START ============ -->
+
+		<div class="fm-container">
+			<!-- Menu -->
+			<div class="menu">
+				<div class="button-close text-right">
+					<a class="fm-button"><i class="fa fa-close fa-2x"></i></a>
+				</div>
+				<ul class="nav">
+					<li><a href="TrangCaNhan.html">Trang cá nhân</a></li>
+					<li><a href="LopHoc.html">Lớp Học</a></li>
+					<li><a href="DangBai.html">Đăng bài</a></li>
+					<li><a class="link-login">Đăng xuất</a></li>
+				</ul>		
+			</div>
+			<!-- end Menu -->
+		</div>
+
+		<!-- ============ NAVBAR END ============ -->
+
+		<!-- ============ HEADER START ============ -->
+
+		<header>
+			<div id="header-background"></div>
+			<div class="container">
+<!-- 				<div class="pull-left">
+					<div id="logo"><a><img src="images/logo.png" alt="EduBox - Kết nối gia sư và học sinh" /></a></div>
+				</div> -->
+				<div id="menu-open" class="pull-right">
+					<a class="fm-button"><i class="fa fa-bars fa-lg"></i></a>
+				</div>
+<!-- 				<div id="searchbox" class="pull-right">
+					<form>
+						<div class="form-group">
+							<label class="sr-only" for="searchfield">Searchbox</label>
+							<input type="text" class="form-control" id="searchfield" placeholder="Type keywords and press enter">
+						</div>
+					</form>
+				</div> -->
+<!-- 				<div id="search" class="pull-right">
+					<a><i class="fa fa-search fa-lg"></i></a>
+				</div> -->
+			</div>
+		</header>
+
+		<!-- ============ HEADER END ============ -->
+
+		<!-- ============ TITLE START ============ -->
+
+		<section id="title">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h1>Lớp học</h1><br>
+						<h4>Lớp học đang mở</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ TITLE END ============ -->
+
+		<!-- ============ JOBS START ============ -->
+
+		<section id="jobs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<h2>Các lớp học đang mở</h2>
+
+						<div class="jobs" id="l-job">																			
+						</div>
+
+						<nav>
+							<ul class="pagination">
+								<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+								<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="col-sm-4" id="sidebar">
+
+						<!-- Featured Jobs Start -->
+						<div class="sidebar-widget">
+							<h2>Lớp học phù hợp</h2>
+							<div id="c-suit">
+							</div>
+						</div>
+						<!-- Featured Jobs End -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ JOBS END ============ -->
+
+		<!-- ============ FOOTER START ============ -->
+
+		<footer>
+			<div id="credits">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-sm-12">
+							&copy; 2020 Quang Trung - EduBox - Kết nối gia sư và học sinh<br>
+							Thiết kế &amp; Phát triển bởi <a href="http://themeforest.net/user/Coffeecream" target="_blank">Quang Trung</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Execute get course detail -->
+		<script type="text/javascript">
+		  	function getCourseDetail(var_id) {
+				console.log("Into function with id:" + var_id);
+				localStorage.setItem('id_picked_course',var_id);
+				$(location).attr('href', 'LopHocChiTiet.html');
+			}
+		</script>
+
+		<!-- ============ FOOTER END ============ -->
+
+		<!-- Modernizr Plugin -->
+		<script src="js/modernizr.custom.79639.js"></script>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+
+		<!-- Bootstrap Plugins -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Retina Plugin -->
+		<script src="js/retina.min.js"></script>
+
+		<!-- ScrollReveal Plugin -->
+		<script src="js/scrollReveal.min.js"></script>
+
+		<!-- Flex Menu Plugin -->
+		<script src="js/jquery.flexmenu.js"></script>
+
+		<!-- Slider Plugin -->
+		<script src="js/jquery.ba-cond.min.js"></script>
+		<script src="js/jquery.slitslider.js"></script>
+
+		<!-- Carousel Plugin -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- Parallax Plugin -->
+		<script src="js/parallax.js"></script>
+
+		<!-- Counterup Plugin -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+
+		<!-- No UI Slider Plugin -->
+		<script src="js/jquery.nouislider.all.min.js"></script>
+
+		<!-- Bootstrap Wysiwyg Plugin -->
+		<script src="js/bootstrap-wysiwyg.js"></script>
+		<script src="js/jquery.hotkeys.js"></script>
+
+		<!-- Flickr Plugin -->
+		<script src="js/jflickrfeed.min.js"></script>
+
+		<!-- Fancybox Plugin -->
+		<script src="js/fancybox.pack.js"></script>
+
+		<!-- Magic Form Processing -->
+		<script src="js/magic.js"></script>
+
+		<!-- jQuery Settings -->
+		<script src="js/settings.js"></script>
+
+		<!-- LopHoc js -->
+		<script src="js/EduBoxJS/LopHoc.js"></script>
+
+	</body>
+
+<!-- Mirrored from coffeecreamthemes.com/themes/jobseek/site/jobs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jul 2015 04:55:17 GMT -->
+</html>
